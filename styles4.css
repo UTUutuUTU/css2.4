@@ -1,0 +1,23 @@
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.columna {
+    background: lightblue;
+    padding: 20px;
+    border: 2px solid blue;
+}
+
+@media (min-width: 768px) {
+    .columna {
+        flex: 1;
+    }
+}
+
+@media (max-width: 767px) {
+    .columna {
+        flex: 100%;
+    }
+}
